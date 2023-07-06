@@ -52,19 +52,19 @@
 #     app.run()
 
 
-from flask import Flask
-# , request,requests,json
+from flask import Flask,request,requests,json
 app = Flask("whatsappBusinessBot")
 
-# Configuration file
-# with open  ('config.json') as f:
-#     config = json.load(f)
-# app.config.update(config)
+Configuration file
+with open  ('config.json') as f:
+    config = json.load(f)
+app.config.update(config)
+
 @app.route("/")
 def hello():
    print('hello') 
-   # return app.config['VERSION'], 200
-   return 'hello'
+   return app.config['VERSION'], 200
+   # return 'hello'
 
 @app.route("/webhook")
 def webhook():
