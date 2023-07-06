@@ -55,7 +55,7 @@
 from flask import Flask,request,requests,json
 app = Flask("whatsappBusinessBot")
 
-Configuration file
+# Configuration file
 with open  ('config.json') as f:
     config = json.load(f)
 app.config.update(config)
