@@ -53,7 +53,7 @@
 
 
 from flask import Flask,request,json
-import urllib.request
+# import urllib.request
 
 app = Flask("whatsappBusinessBot")
 
