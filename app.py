@@ -66,7 +66,8 @@ app.config.update(config)
  @app.route("/webhook")
 def verify_webhook():
    print('gopal') 
-   return app.config['VERSION'], 200
+   # return app.config['VERSION'], 200
+   return 'Gopal'
 
 # def send_msg(msg, to_number, phone_number_id):
 #    headers = {
