@@ -90,8 +90,8 @@ def send_msg(msg, to_number, phone_number_id):
        }
    }
    url = f"https://graph.facebook.com/{app.config['VERSION']}/{phone_number_id}/messages"
-   # response = requests.post(url=url, headers=headers, json=json_data)
-     response = urllib.request.Request(url=url, headers=headers, json=json_data,method='POST')
+    response = requests.post(url=url, headers=headers, json=json_data)
+     # response = urllib.request.Request(url=url, headers=headers, json=json_data,method='POST')
 
    print('log:-----------------------------------------------------response.text')
    print(response.text)
