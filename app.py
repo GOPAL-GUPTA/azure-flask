@@ -44,5 +44,9 @@ def webhook():
         data = request.json
         return 'success'
         
+@app.route('/github')
+def github():
+    return 'github'
+        
 if __name__=='__main__':
     app.run()
