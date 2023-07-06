@@ -52,7 +52,8 @@
 #     app.run()
 
 
-from flask import Flask,request,requests,json
+from flask import Flask,request,json
+import requests
 app = Flask("whatsappBusinessBot")
 
 # Configuration file
