@@ -52,8 +52,9 @@
 #     app.run()
 
 
-from flask import Flask,request,json
-# import requests
+from flask import Flask, request
+import requests
+import json
 # import urllib.request
 
 app = Flask("whatsappBusinessBot")
